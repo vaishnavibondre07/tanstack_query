@@ -26,7 +26,11 @@ h1 {
   font-family: "syne";
   letter-spacing: 0.1rem;
 }
-
+h2 {
+  color: #fff;
+  text-align: center;
+  
+}
 button {
   padding: 0rem 1.2rem;
   border-radius: 0.3rem;
@@ -40,14 +44,14 @@ button {
   font-size: 15px;
   transition: all 0.5s ease;
   margin-left: 1.2rem;
-  -webkit-border-radius: 0.3rem;
+  /* -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; */
 }
 
 button:hover {
@@ -105,10 +109,10 @@ footer {
     background-color: #212f3c;
     padding: 1.6rem;
     border-radius: 0.3rem;
-    -webkit-border-radius: 0.3rem;
+    /* -webkit-border-radius: 0.3rem;
     -moz-border-radius: 0.3rem;
     -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem; */
     list-style-position: inside;
     border-left: 0.2rem solid #fff;
     list-style: none;

@@ -5,12 +5,9 @@ import { FetchRq } from "./pages/FetchRq";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { FetchIndv } from "./component/FetchInv";
 
-export const App = () => {
-  
+const queryClient = new QueryClient();
 
-  const queryClient = new QueryClient();
-
-  const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <FetchRq />,
@@ -22,6 +19,8 @@ export const App = () => {
 ]);
 
 
+
+export const App = () => {
 
   return (
 

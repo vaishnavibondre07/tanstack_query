@@ -4,9 +4,14 @@ const api = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com",
 });
 
-export const fetchPosts = async () => {
+export const fetchPosts = async (pageNum) => {
   try {
-    const res = await api.get("/posts");
+
+    const limit = 3;
+
+    const start = (pageNum - 1) * limit;
+    
+    const res = await api.get(`/posts?_start=${start}&_limit=${limit}`);
 
     return res.status === 200 ? res.data : [];
   } catch (error) {
@@ -23,3 +28,7 @@ export const fetchInvPost = async (id) => {
     console.log(error);
   }
 };
+
+export const deletePost = async(id) => {
+   return api.delete(`/posts/${id}`);
+}
